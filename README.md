@@ -4,7 +4,7 @@ Western New England University CPE 425 Software Engineering Group
 
 Members:
 David Kleyman
-Jen Kazda
+Jenn Kazda
 Kyle Herren
 Steve Gianrusso
 Marly Haas
