@@ -1,4 +1,4 @@
-# CPE-425-Group
+# Magistratus
 
 Western New England University CPE 425 Software Engineering Group
 
