@@ -166,3 +166,5 @@ C:\Users\KyleH\Documents\CPE-425-Group\Magistratus\obj\Debug\Assembly-CSharp.csp
 C:\Users\KyleH\Documents\CPE-425-Group\Magistratus\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\KyleH\Documents\CPE-425-Group\Magistratus\obj\Debug\Assembly-CSharp.dll
 C:\Users\KyleH\Documents\CPE-425-Group\Magistratus\obj\Debug\Assembly-CSharp.pdb
+C:\Users\KyleH\Documents\CPE-425-Group\Magistratus\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\KyleH\Documents\CPE-425-Group\Magistratus\Temp\bin\Debug\UnityEditor.UI.xml

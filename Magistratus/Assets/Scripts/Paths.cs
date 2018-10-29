@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace Pathing {
 
+    // Enumeration of the buildings
     public enum Buildings {
         Sleith = 0,
         Dining = 1,
@@ -28,24 +29,34 @@ namespace Pathing {
 
     public class Paths {
 
-        public Vector3[] buildingCoordinates = { new Vector3(-130, 13, -31), // Sleith
-                                                 new Vector3(-64, 12, 17), // Dining
-                                                 new Vector3(-152, 13, -127), // Rivers
-                                                 new Vector3(-25, 15, -140), // Commonwealth
-                                                 new Vector3(59, 17, -116), // LaRiv
-                                                 new Vector3(52, 15, -60), // Windham
-                                                 new Vector3(147, 16, 59), // Berkshire
-                                                 new Vector3(129, 16, 0), // Hampden
-                                                 new Vector3(95, 16, 24), // Franklin
-                                                 new Vector3(159, 13, 110), // Donut1
-                                                 new Vector3(69, 12, 124), // CSP
-                                                 new Vector3(1, 16, 132), // Emerson
-                                                 new Vector3(19, 12, 52), // DAmour
-                                                 new Vector3(-9, 12, 26), // Churchill
-                                                 new Vector3(-35, 12, 52), // DeLiso
-                                                 new Vector3(-112, 7, 83), // Herman
-                                                 new Vector3(-162, 4, 97), // Welcome
-                                                 new Vector3(205, 16, 16) }; // PublicSafety
+        // Arrary of building coordinates
+        public Vector3[] buildingCoordinates = { new Vector3(-130, 5, -31), // Sleith
+                                                 new Vector3(-64, 5, 17), // Dining
+                                                 new Vector3(-152, 5, -127), // Rivers
+                                                 new Vector3(-25, 5, -140), // Commonwealth
+                                                 new Vector3(59, 5, -116), // LaRiv
+                                                 new Vector3(52, 5, -60), // Windham
+                                                 new Vector3(147, 5, 59), // Berkshire
+                                                 new Vector3(129, 5, 0), // Hampden
+                                                 new Vector3(95, 5, 24), // Franklin
+                                                 new Vector3(159, 5, 110), // Donut1
+                                                 new Vector3(69, 5, 124), // CSP
+                                                 new Vector3(1, 5, 132), // Emerson
+                                                 new Vector3(19, 5, 52), // DAmour
+                                                 new Vector3(-9, 5, 26), // Churchill
+                                                 new Vector3(-35, 5, 52), // DeLiso
+                                                 new Vector3(-112, 5, 83), // Herman
+                                                 new Vector3(-162, 5, 97), // Welcome
+                                                 new Vector3(205, 5, 16) }; // PublicSafety
+
+        // Array of buildings that professors can spawn from
+        public int[] professorBuildings = { (int)Buildings.Emerson, // Qouneh Spawn
+                                            (int)Buildings.DeLiso, // Moriarty Spawn
+                                            (int)Buildings.DAmour, // Northrup Spawn
+                                            (int)Buildings.Churchill, // Adamshick Spawn
+                                            (int)Buildings.Rivers, // Musiak Spawn
+                                            (int)Buildings.CSP, // Burke Spawn
+                                            (int)Buildings.Sleith }; // Magotra spawn
 
     }
 }
