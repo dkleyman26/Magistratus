@@ -23,7 +23,7 @@ public class Professor_Spawner : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        InvokeRepeating("Spawn", gameTime.oneDay, gameTime.oneHour);
+        InvokeRepeating("Spawn", gameTime.oneHour, gameTime.oneHour);
     }
 	
 	void Spawn () {

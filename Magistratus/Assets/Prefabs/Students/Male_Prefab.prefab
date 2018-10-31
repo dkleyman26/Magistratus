@@ -396,7 +396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4137410551263116}
   - component: {fileID: 95526836210935016}
-  - component: {fileID: 114766198400041650}
+  - component: {fileID: 114929752740103804}
   - component: {fileID: 195402328479691806}
   m_Layer: 0
   m_Name: Male_Prefab
@@ -1049,8 +1049,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1530745981583624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.067993, y: 4.9990845, z: -2.0953064}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 202.47403, y: 5.32, z: 9.493195}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 4136818846093894}
   - {fileID: 4299712119378624}
@@ -1774,7 +1774,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114766198400041650
+--- !u!114 &114929752740103804
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1782,12 +1782,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1530745981583624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16954405b901521428677fa736e133cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f4b5d62ba09f7b48a738c8d16dd992c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: 0
-  end: 25
-  targetLocation: {x: 0, y: 0, z: 0}
+  player: {fileID: 0}
+  targetWander: {x: 0, y: 0, z: 0}
 --- !u!137 &137619771235390880
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
