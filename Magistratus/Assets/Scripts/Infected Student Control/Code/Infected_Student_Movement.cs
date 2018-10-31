@@ -10,12 +10,12 @@ public class Infected_Student_Movement : MonoBehaviour {
     int changeDistance = 10; // Distance from the targeted wander location to generate a new random location
     int change = 15; // Range that the new target location can spawn within
     int randomX; // Random X coordinate
-    int randomZ; // Random Y coordinate
-    NavMeshAgent nav; // Student NavMeshAgent
-    public Vector3 targetWander; // Target vecotr to wander to
-    Paths studentPaths = new Paths();
+    int randomZ; // Random Z coordinate
+    NavMeshAgent nav; // Infected Student NavMeshAgent
+    public Vector3 targetWander; // Target vector to wander to
+    Paths studentPaths = new Paths(); // Reference to the student path class
     int professorNumber; // If the building has a professor this number represents which number professor it is.
-    int wanderDistance;
+    int wanderDistance; // Distance the infected student can wander from the starting building
 
     // Determines the index of the spawn point
     void getSpawnPoint() {

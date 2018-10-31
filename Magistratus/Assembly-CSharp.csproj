@@ -107,6 +107,7 @@
     <Compile Include="Assets\Scripts\Player\Code\Camera_Follow_Player.cs" />
     <Compile Include="Assets\Scripts\Player\Code\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Professor Control\Code\Professor_Class.cs" />
+    <Compile Include="Assets\Scripts\Professor Control\Code\Professor_Movement_Control.cs" />
     <Compile Include="Assets\Scripts\Spawning\Code\Professor_Spawner.cs" />
     <Compile Include="Assets\Scripts\Spawning\Code\Student_Spawner.cs" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
