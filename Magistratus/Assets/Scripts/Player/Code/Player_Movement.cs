@@ -34,7 +34,7 @@ public class Player_Movement : MonoBehaviour {
 
     // Rotate the player based on the mouse input
     void Rotation(float lr) {
-        lr = lr * 2;
+        lr = lr * 8;
         rb.rotation = Quaternion.Euler(rb.rotation.eulerAngles + new Vector3(0f, lr, 0f)); // Use the Rigidbody to rotate the player
     }
 }
