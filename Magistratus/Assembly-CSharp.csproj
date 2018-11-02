@@ -102,11 +102,13 @@
     <Compile Include="Assets\Scripts\Day Night Cycle\Code\Global_Time.cs" />
     <Compile Include="Assets\Scripts\Follow_Path.cs" />
     <Compile Include="Assets\Scripts\Infected Student Control\Code\Infected_Student_Movement.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Code\Inventory_Manager.cs" />
     <Compile Include="Assets\Scripts\Non Infected Control\Code\Student_Walking.cs" />
     <Compile Include="Assets\Scripts\Paths.cs" />
     <Compile Include="Assets\Scripts\Player\Code\Camera_Follow_Player.cs" />
     <Compile Include="Assets\Scripts\Player\Code\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Professor Control\Code\Professor_Class.cs" />
+    <Compile Include="Assets\Scripts\Professor Control\Code\Professor_Movement_Control.cs" />
     <Compile Include="Assets\Scripts\Spawning\Code\Professor_Spawner.cs" />
     <Compile Include="Assets\Scripts\Spawning\Code\Student_Spawner.cs" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />

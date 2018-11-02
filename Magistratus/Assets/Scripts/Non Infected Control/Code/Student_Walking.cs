@@ -37,7 +37,7 @@ namespace Pathing {
         // Update is called once per frame
         void Update() {
             Vector3 temp;
-            nav.SetDestination(targetLocation); // Uses the NAvMeshAgent to path to the end building
+            nav.SetDestination(targetLocation); // Uses the NavMeshAgent to path to the end building
             temp = transform.position - studentPaths.buildingCoordinates[end]; // Calculates the distance between the Student and the end building
             if (temp.magnitude < 11 && temp.magnitude > -11) { // If the Student is within range of the end building, kill the Student
                 Destroy(gameObject);
