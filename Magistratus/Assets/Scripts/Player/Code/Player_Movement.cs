@@ -6,7 +6,7 @@ public class Player_Movement : MonoBehaviour {
 
     public float h, v, lr;
     public float speed = 10; // The speed at which the player travels
-    public float rotationSpeed = 1; // The speed at which the player rotates
+    public float rotationSpeed = 8; // The speed at which the player rotates
 
     Rigidbody rb; // Rigidbody of the player
     Vector3 targetMotion; // Vector of the direction that the player moves in
@@ -14,6 +14,7 @@ public class Player_Movement : MonoBehaviour {
 	// Initialize the player movement script
 	void Start () {
         rb = GetComponent<Rigidbody>(); // Gets the players Rigidbody
+        rb.freezeRotation = true;
 	}
 	
 	// Update is called once per frame
@@ -34,7 +35,7 @@ public class Player_Movement : MonoBehaviour {
 
     // Rotate the player based on the mouse input
     void Rotation(float lr) {
-        lr = lr * 2;
+        lr = lr * rotationSpeed;
         rb.rotation = Quaternion.Euler(rb.rotation.eulerAngles + new Vector3(0f, lr, 0f)); // Use the Rigidbody to rotate the player
     }
 }

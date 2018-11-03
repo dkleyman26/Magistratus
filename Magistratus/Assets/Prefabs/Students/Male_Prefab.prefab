@@ -398,6 +398,7 @@ GameObject:
   - component: {fileID: 95526836210935016}
   - component: {fileID: 114929752740103804}
   - component: {fileID: 195402328479691806}
+  - component: {fileID: 136820057864460114}
   m_Layer: 0
   m_Name: Male_Prefab
   m_TagString: Untagged
@@ -1787,6 +1788,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   targetWander: {x: 0, y: 0, z: 0}
+--- !u!136 &136820057864460114
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1530745981583624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 16
+  m_Direction: 1
+  m_Center: {x: 0, y: 8, z: 0}
 --- !u!137 &137619771235390880
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

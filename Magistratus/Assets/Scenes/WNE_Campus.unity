@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.70185214, g: 0.78017825, b: 0.7678964, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -2229,6 +2229,7 @@ GameObject:
   - component: {fileID: 1011520197}
   - component: {fileID: 1011520196}
   - component: {fileID: 1011520198}
+  - component: {fileID: 1011520199}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2275,12 +2276,24 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!65 &1011520199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1011520195}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 2, z: 1.5}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &1070060408
 GameObject:
   m_ObjectHideFlags: 0
@@ -4580,6 +4593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2115660575}
   - component: {fileID: 2115660592}
+  - component: {fileID: 2115660593}
   - component: {fileID: 2115660591}
   - component: {fileID: 2115660579}
   - component: {fileID: 2115660574}
@@ -4967,6 +4981,20 @@ MonoBehaviour:
   oMusiak: {fileID: 1119791856221626, guid: 59568f889690e90478a69a60632f8eb7, type: 2}
   oBurke: {fileID: 1909002841540480, guid: 5f4f74102b46a5848aa1f73d9a228528, type: 2}
   oMagotra: {fileID: 1899755236184910, guid: f5ad97c85f000934a987da977c2458c1, type: 2}
+--- !u!114 &2115660593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115660573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78adbdc905d7db646841d577e6e9017d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cure: {fileID: 1488429548903476, guid: b5be6fb41d6d0fc41b834a9ee7d018e8, type: 2}
+  spawnPoint: {fileID: 1717818515}
+  gameTime: {fileID: 755689}
 --- !u!1 &2127094300
 GameObject:
   m_ObjectHideFlags: 0
