@@ -38,6 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4534057356588602}
   - component: {fileID: 65776855514476764}
+  - component: {fileID: 114486580834904028}
   - component: {fileID: 195738090881269216}
   m_Layer: 0
   m_Name: The_Cure
@@ -139,6 +140,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114486580834904028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1488429548903476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015d14e51b7d2f44782d038a55ce265b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!195 &195738090881269216
 NavMeshAgent:
   m_ObjectHideFlags: 1

@@ -99,6 +99,7 @@
     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
     <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+    <Compile Include="Assets\Scripts\Cure\Code\Cure_Delivery_Control.cs" />
     <Compile Include="Assets\Scripts\Day Night Cycle\Code\Global_Time.cs" />
     <Compile Include="Assets\Scripts\Follow_Path.cs" />
     <Compile Include="Assets\Scripts\Infected Student Control\Code\Infected_Student_Movement.cs" />
