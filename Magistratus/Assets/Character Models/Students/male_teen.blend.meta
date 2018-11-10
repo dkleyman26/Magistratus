@@ -41,28 +41,29 @@ ModelImporter:
     100070: Main
     100072: //RootNode
     100074: male_teen_lo
-    100076: neck
-    100078: pants
-    100080: root
-    100082: shin_L
-    100084: shin_R
-    100086: shirt
-    100088: shoulder_L
-    100090: shoulder_R
-    100092: spine
-    100094: Teen_rig
-    100096: thigh_L
-    100098: thigh_R
-    100100: thumb_01_L
-    100102: thumb_01_R
-    100104: thumb_02_L
-    100106: thumb_02_R
-    100108: thumb_03_L
-    100110: thumb_03_R
-    100112: toe_L
-    100114: toe_R
-    100116: upper_arm_L
-    100118: upper_arm_R
+    100076: Mesh
+    100078: neck
+    100080: pants
+    100082: root
+    100084: shin_L
+    100086: shin_R
+    100088: shirt
+    100090: shoulder_L
+    100092: shoulder_R
+    100094: spine
+    100096: Teen_rig
+    100098: thigh_L
+    100100: thigh_R
+    100102: thumb_01_L
+    100104: thumb_01_R
+    100106: thumb_02_L
+    100108: thumb_02_R
+    100110: thumb_03_L
+    100112: thumb_03_R
+    100114: toe_L
+    100116: toe_R
+    100118: upper_arm_L
+    100120: upper_arm_R
     400000: chest
     400002: f_index_01_L
     400004: f_index_01_R
@@ -101,37 +102,41 @@ ModelImporter:
     400070: Main
     400072: //RootNode
     400074: male_teen_lo
-    400076: neck
-    400078: pants
-    400080: root
-    400082: shin_L
-    400084: shin_R
-    400086: shirt
-    400088: shoulder_L
-    400090: shoulder_R
-    400092: spine
-    400094: Teen_rig
-    400096: thigh_L
-    400098: thigh_R
-    400100: thumb_01_L
-    400102: thumb_01_R
-    400104: thumb_02_L
-    400106: thumb_02_R
-    400108: thumb_03_L
-    400110: thumb_03_R
-    400112: toe_L
-    400114: toe_R
-    400116: upper_arm_L
-    400118: upper_arm_R
+    400076: Mesh
+    400078: neck
+    400080: pants
+    400082: root
+    400084: shin_L
+    400086: shin_R
+    400088: shirt
+    400090: shoulder_L
+    400092: shoulder_R
+    400094: spine
+    400096: Teen_rig
+    400098: thigh_L
+    400100: thigh_R
+    400102: thumb_01_L
+    400104: thumb_01_R
+    400106: thumb_02_L
+    400108: thumb_02_R
+    400110: thumb_03_L
+    400112: thumb_03_R
+    400114: toe_L
+    400116: toe_R
+    400118: upper_arm_L
+    400120: upper_arm_R
     2100000: pants_001
     2100002: shirt
     2100004: eye
     2100006: iris
     2100008: pupil
     2100010: male_teen
-    4300000: pants
-    4300002: shirt
-    4300004: male_teen_lo
+    2300000: Mesh
+    3300000: Mesh
+    4300000: Mesh
+    4300002: pants
+    4300004: shirt
+    4300006: male_teen_lo
     7400000: Default Take
     7400002: Male_teen_poses
     9500000: //RootNode

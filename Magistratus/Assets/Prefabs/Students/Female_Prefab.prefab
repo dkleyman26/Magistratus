@@ -549,6 +549,7 @@ GameObject:
   - component: {fileID: 95958684067446192}
   - component: {fileID: 114916023755750638}
   - component: {fileID: 195779895755482820}
+  - component: {fileID: 136055276890375810}
   m_Layer: 0
   m_Name: Female_Prefab
   m_TagString: Untagged
@@ -1789,6 +1790,19 @@ MonoBehaviour:
   start: 0
   end: 25
   targetLocation: {x: 0, y: 0, z: 0}
+--- !u!136 &136055276890375810
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670418043484134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 16
+  m_Direction: 1
+  m_Center: {x: 0, y: 8, z: 0}
 --- !u!137 &137016727728888540
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

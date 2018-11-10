@@ -6,14 +6,17 @@ public class Player_Movement : MonoBehaviour {
 
     public float h, v, lr;
     public float speed = 10; // The speed at which the player travels
-    public float rotationSpeed = 1; // The speed at which the player rotates
+    public float rotationSpeed = 8; // The speed at which the player rotates
+    public Player_Reactions playerReactions; // Reference to the player reactions script
 
     Rigidbody rb; // Rigidbody of the player
     Vector3 targetMotion; // Vector of the direction that the player moves in
 
 	// Initialize the player movement script
 	void Start () {
+        playerReactions = GetComponent<Player_Reactions>(); // Gets the players reactions script
         rb = GetComponent<Rigidbody>(); // Gets the players Rigidbody
+        rb.freezeRotation = true;
 	}
 	
 	// Update is called once per frame
@@ -21,8 +24,10 @@ public class Player_Movement : MonoBehaviour {
         h = Input.GetAxis("Horizontal"); // Get the input from the A and D keys
         v = Input.GetAxis("Vertical"); // Get the input from the W and S keys
         lr = Input.GetAxis("Mouse X"); // Get the horizontal movement of the mouse
-        Movement(h, v); // Call the Movement function
-        Rotation(lr); // Call the Rotation function
+        if (!playerReactions.stunned) { // If the Player is not stunned, move
+            Movement(h, v); // Call the Movement function
+            Rotation(lr); // Call the Rotation function
+        }
 	}
 
     // Move the player based on the key input
@@ -34,7 +39,7 @@ public class Player_Movement : MonoBehaviour {
 
     // Rotate the player based on the mouse input
     void Rotation(float lr) {
-        lr = lr * 2;
+        lr = lr * rotationSpeed;
         rb.rotation = Quaternion.Euler(rb.rotation.eulerAngles + new Vector3(0f, lr, 0f)); // Use the Rigidbody to rotate the player
     }
 }

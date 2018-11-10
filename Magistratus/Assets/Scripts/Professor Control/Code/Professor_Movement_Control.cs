@@ -9,6 +9,7 @@ public class Professor_Movement_Control : MonoBehaviour {
     public GameObject player; // Reference to the player gameobject
     int start;  // Start building index
     int changeDistance = 10; // Distance from the target wander location to generate a new random location
+    int chaseRange = 25; // Range the player has to enter to be chased
     int change = 15; // Range that the new target wander location can spawn within
     int randomX; // Random X coordinate
     int randomZ; // Random Y coordinate
@@ -87,7 +88,7 @@ public class Professor_Movement_Control : MonoBehaviour {
         else {
             Vector3 toPlayer = transform.position - player.transform.position; // Vector to the player's current position
             Vector3 toSpawn = transform.position - studentPaths.buildingCoordinates[start]; ; // Vector from current position to the spawn point
-            if (toPlayer.magnitude < changeDistance && toPlayer.magnitude > -changeDistance) { // If the player is within the Professor's range
+            if (toPlayer.magnitude < chaseRange && toPlayer.magnitude > -chaseRange) { // If the player is within the Professor's range
                 nav.SetDestination(player.transform.position); // Use the NavMeshAgent to path to the player
                 chasingPlayer = true; // Raise the flag to indicate the professor is chasing the player
             }

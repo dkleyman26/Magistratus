@@ -8,6 +8,7 @@ public class Infected_Student_Movement : MonoBehaviour {
     public GameObject player; // Reference to the player
     int start; // Start building index
     int changeDistance = 10; // Distance from the targeted wander location to generate a new random location
+    int chaseRange = 25; // Range the player has to enter to be chased
     int change = 15; // Range that the new target location can spawn within
     int randomX; // Random X coordinate
     int randomZ; // Random Z coordinate
@@ -81,7 +82,7 @@ public class Infected_Student_Movement : MonoBehaviour {
 	void Update () {
         Vector3 toPlayer = transform.position - player.transform.position; // Vector to the player's current position
         Vector3 toSpawn = transform.position - studentPaths.buildingCoordinates[start]; ; // Vector from current position to the spawn point
-        if (toPlayer.magnitude < changeDistance && toPlayer.magnitude > -changeDistance) { // If the player is within the infected student's range
+        if (toPlayer.magnitude < chaseRange && toPlayer.magnitude > -chaseRange) { // If the player is within the infected student's range
             nav.SetDestination(player.transform.position); // Use the NavMeshAgent to path to the player
         }
         else if (nav.remainingDistance < changeDistance) { // If the Student is within the change distance 
