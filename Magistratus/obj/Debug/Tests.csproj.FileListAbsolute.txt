@@ -1,0 +1,2 @@
+C:\Users\natha\Desktop\Magistratus\Magistratus\obj\Debug\Tests.csprojAssemblyReference.cache
+C:\Users\natha\Desktop\Magistratus\Magistratus\obj\Debug\Tests.csproj.CoreCompileInputs.cache
