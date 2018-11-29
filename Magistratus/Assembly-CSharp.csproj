@@ -110,6 +110,7 @@
     <Compile Include="Assets\Scripts\Player\Code\Camera_Follow_Player.cs" />
     <Compile Include="Assets\Scripts\Player\Code\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Player\Code\Player_Reactions.cs" />
+    <Compile Include="Assets\Scripts\Professor Control\Code\Professor_Attack.cs" />
     <Compile Include="Assets\Scripts\Professor Control\Code\Professor_Class.cs" />
     <Compile Include="Assets\Scripts\Professor Control\Code\Professor_Movement_Control.cs" />
     <Compile Include="Assets\Scripts\Spawning\Code\Delivery_Spawner.cs" />
