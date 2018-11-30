@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 94
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 95
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,10 +368,10 @@ MonoBehaviour:
     height: 434
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e6fbffff
-    m_LastClickedID: -1050
-    m_ExpandedIDs: e6fbffff0000000026160000
+    scrollPos: {x: 0, y: 335}
+    m_SelectedIDs: 28160000
+    m_LastClickedID: 5672
+    m_ExpandedIDs: e6fbffff000000004e160000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -536,20 +536,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts/Player/Code
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts/Player/Code
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\KyleH\Documents\CPE-425-Group\Magistratus
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 214}
-    m_SelectedIDs: 380c0000
-    m_LastClickedID: 3128
-    m_ExpandedIDs: 000000008a0a0000600b0000a60b0000020c0000260c0000380c0000900d0000bc0e000016110000883c000000ca9a3b
+    scrollPos: {x: 0, y: 394}
+    m_SelectedIDs: 8e0d0000
+    m_LastClickedID: 3470
+    m_ExpandedIDs: 000000008c0a0000620b0000a80b0000040c0000280c00003a0c0000d40c0000960d0000c40e00001e11000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -577,7 +577,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008a0a0000600b0000a60b0000020c0000380c0000900d0000bc0e000016110000
+    m_ExpandedIDs: 000000008c0a0000620b0000a80b0000040c0000280c00003a0c0000d40c0000960d0000c40e00001e110000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
