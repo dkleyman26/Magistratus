@@ -1861,6 +1861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  student: {fileID: 1670418043484134, guid: 71019f91aaf34be4b97e8e6e511db24d, type: 2}
   targetWander: {x: 0, y: 0, z: 0}
 --- !u!114 &114926253330854294
 MonoBehaviour:

@@ -2565,6 +2565,46 @@ Transform:
   m_Father: {fileID: 783755844}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0.596, z: 0}
+--- !u!1 &1170869833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1170869835}
+  - component: {fileID: 1170869834}
+  m_Layer: 0
+  m_Name: Terra_Mod
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1170869834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170869833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c64cafc22fd4214caf3cca8291eb19e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1170869835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1170869833}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.835728, y: 7.058177, z: 84.87931}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1202814354
 GameObject:
   m_ObjectHideFlags: 0
@@ -5048,12 +5088,12 @@ MonoBehaviour:
   - {fileID: 752030411}
   - {fileID: 1083249746}
   oQouneh: {fileID: 1244729772620322, guid: 55ed6293275fe2d46876679f1cd8791f, type: 2}
-  oMoriarty: {fileID: 1381661756646736, guid: a5d01a5522f62f34d95f2a016a8a0762, type: 2}
-  oNorthrup: {fileID: 1665729615339230, guid: f640c836f052ae24d95c5b61f1b272d6, type: 2}
-  oAdamshick: {fileID: 1141051985884578, guid: 0de39678e49ca8d44b33f2fd7fee5da3, type: 2}
-  oMusiak: {fileID: 1119791856221626, guid: 59568f889690e90478a69a60632f8eb7, type: 2}
-  oBurke: {fileID: 1909002841540480, guid: 5f4f74102b46a5848aa1f73d9a228528, type: 2}
-  oMagotra: {fileID: 1899755236184910, guid: f5ad97c85f000934a987da977c2458c1, type: 2}
+  oMoriarty: {fileID: 1244729772620322, guid: 55ed6293275fe2d46876679f1cd8791f, type: 2}
+  oNorthrup: {fileID: 1244729772620322, guid: 55ed6293275fe2d46876679f1cd8791f, type: 2}
+  oAdamshick: {fileID: 1244729772620322, guid: 55ed6293275fe2d46876679f1cd8791f, type: 2}
+  oMusiak: {fileID: 1244729772620322, guid: 55ed6293275fe2d46876679f1cd8791f, type: 2}
+  oBurke: {fileID: 1244729772620322, guid: 55ed6293275fe2d46876679f1cd8791f, type: 2}
+  oMagotra: {fileID: 1244729772620322, guid: 55ed6293275fe2d46876679f1cd8791f, type: 2}
 --- !u!114 &2115660593
 MonoBehaviour:
   m_ObjectHideFlags: 0

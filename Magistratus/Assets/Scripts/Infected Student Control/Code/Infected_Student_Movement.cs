@@ -6,6 +6,7 @@ using UnityEngine.AI;
 
 public class Infected_Student_Movement : MonoBehaviour {
     public GameObject player; // Reference to the player
+    public GameObject student; // The student gameobject to be spawned if the infected student is cured
     int start; // Start building index
     int changeDistance = 10; // Distance from the targeted wander location to generate a new random location
     int chaseRange = 25; // Range the player has to enter to be chased
@@ -17,6 +18,7 @@ public class Infected_Student_Movement : MonoBehaviour {
     Paths studentPaths = new Paths(); // Reference to the student path class
     int professorNumber; // If the building has a professor this number represents which number professor it is.
     int wanderDistance; // Distance the infected student can wander from the starting building
+    Terrain_Modifiers terra; // Reference to the map's terrain modifiers
 
     // Determines the index of the spawn point
     void getSpawnPoint() {
@@ -67,7 +69,8 @@ public class Infected_Student_Movement : MonoBehaviour {
 
     // Initializes the script
     void Start () {
-        player = GameObject.Find("Player");
+        player = GameObject.Find("Player"); // Get the reference to the player
+        terra = GameObject.Find("Terra_Mod").GetComponent<Terrain_Modifiers>(); // Get the terrain modifiers
         getSpawnPoint(); // Find the Student's spawn point index
         checkProfessor(); // Check which professor spawned the infected student
         setWanderDistance(); // Set the distance the infected student can wander
@@ -95,6 +98,11 @@ public class Infected_Student_Movement : MonoBehaviour {
         else if (!(toSpawn.magnitude < wanderDistance && toSpawn.magnitude > -wanderDistance)) { // If the Student wanders too far from its spawn building
             targetWander = studentPaths.buildingCoordinates[start]; // Set the target wander location to the start building coordinates
             nav.SetDestination(targetWander); // Use the NavMeshAgent to path to the target wander vector
+        }
+
+        if (terra.isOnInfected(transform.position)) { // If the infected student is standing on cured ground
+            Instantiate(student, transform.position, transform.rotation); // Spawn a non infected student
+            Destroy(gameObject); // Delete the infected student
         }
 	}
 }
