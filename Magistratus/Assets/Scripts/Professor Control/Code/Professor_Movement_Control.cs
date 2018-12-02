@@ -19,6 +19,10 @@ public class Professor_Movement_Control : MonoBehaviour {
     int professorNumber; // If the building has a professor this number represents which number professor it is.
     int wanderDistance; // The distance the professor can wander from the starting bulding
     bool chasingPlayer; // Flag raised when the professor locks onto the player
+    public int freeCounter; // Counts how long the professor has been free for
+    public int lockCounter; // Counts how long the professor has been in the cure zone for
+    Terrain_Modifiers terra; // Reference to the map's terrain modifiers
+    Professor_Spawner profManager; // Reference to the professor spawner 
 
     // Determines the index of the spawn point
     void getSpawnPoint() {
@@ -70,6 +74,8 @@ public class Professor_Movement_Control : MonoBehaviour {
     // Use this for initialization
     void Start () {
         player = GameObject.Find("Player");
+        profManager = GameObject.Find("SpawnManager").GetComponent<Professor_Spawner>(); // Get the professor spawner
+        terra = GameObject.Find("Terra_Mod").GetComponent<Terrain_Modifiers>(); // Get the terrain modifiers
         getSpawnPoint(); // Find the Professor's spawn point index
         checkProfessor(); // Check which professor spawned
         setWanderDistance(); // Set the distance the professor can wander
@@ -102,6 +108,21 @@ public class Professor_Movement_Control : MonoBehaviour {
             else if (!(toSpawn.magnitude < wanderDistance && toSpawn.magnitude > -wanderDistance)) { // If the Professor wanders too far from its spawn building
                 targetWander = studentPaths.buildingCoordinates[start]; // Set the target wander location to the start building coordinates
                 nav.SetDestination(targetWander); // Use the NavMeshAgent to path to the target wander vector
+            }
+        }
+
+        if (terra.isOnInfected(transform.position)) {
+            freeCounter = 0;
+            lockCounter++;
+            if (lockCounter > 50) {
+                profManager.killProfessor(professorNumber);
+                Destroy(gameObject);
+            }
+        }
+        else {
+            freeCounter++;
+            if (freeCounter > 100) {
+                lockCounter = 0;
             }
         }
     }

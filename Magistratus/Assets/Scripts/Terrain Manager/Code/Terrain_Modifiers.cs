@@ -27,12 +27,12 @@ public class Terrain_Modifiers : MonoBehaviour {
     public void setCurePatch(Vector3 center) {
         curePatch = center;
         activeCure = true;
-        activeTimer = 5;
+        activeTimer = 15;
     }
 
     // Returns true if the location sent is on cure terrain
     public bool isOnInfected(Vector3 location) {
-        if ((location.x < curePatch.x + 5 && location.x > curePatch.x - 5) && (location.z < curePatch.z + 5 && location.z > curePatch.z - 5)) {
+        if (activeCure && (location.x < curePatch.x + 4 && location.x > curePatch.x - 4) && (location.z < curePatch.z + 4 && location.z > curePatch.z - 4)) {
             return true;
         }
         return false;

@@ -19,6 +19,7 @@ public class Infected_Student_Movement : MonoBehaviour {
     int professorNumber; // If the building has a professor this number represents which number professor it is.
     int wanderDistance; // Distance the infected student can wander from the starting building
     Terrain_Modifiers terra; // Reference to the map's terrain modifiers
+    Professor_Spawner profManager; // Reference to the professor spawner 
 
     // Determines the index of the spawn point
     void getSpawnPoint() {
@@ -70,6 +71,7 @@ public class Infected_Student_Movement : MonoBehaviour {
     // Initializes the script
     void Start () {
         player = GameObject.Find("Player"); // Get the reference to the player
+        profManager = GameObject.Find("SpawnManager").GetComponent<Professor_Spawner>(); // Get the professor spawner
         terra = GameObject.Find("Terra_Mod").GetComponent<Terrain_Modifiers>(); // Get the terrain modifiers
         getSpawnPoint(); // Find the Student's spawn point index
         checkProfessor(); // Check which professor spawned the infected student
@@ -101,6 +103,11 @@ public class Infected_Student_Movement : MonoBehaviour {
         }
 
         if (terra.isOnInfected(transform.position)) { // If the infected student is standing on cured ground
+            Instantiate(student, transform.position, transform.rotation); // Spawn a non infected student
+            Destroy(gameObject); // Delete the infected student
+        }
+
+        if (!profManager.isProfessorAlive(professorNumber)) { // If the professor that spawned the infected student dies cure the infected student
             Instantiate(student, transform.position, transform.rotation); // Spawn a non infected student
             Destroy(gameObject); // Delete the infected student
         }

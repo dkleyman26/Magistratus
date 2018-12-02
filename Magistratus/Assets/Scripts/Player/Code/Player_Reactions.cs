@@ -9,7 +9,7 @@ public class Player_Reactions : MonoBehaviour {
     int freeCounter;
     int repeatCounter;
     GameObject player; // Reference to the player
-    Vector3 respawn = new Vector3(-3, 1, -7);
+    Vector3 respawn = new Vector3(205, 5, 16);
 
 	// Initializes the script
 	void Start () {

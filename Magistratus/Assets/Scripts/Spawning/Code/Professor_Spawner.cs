@@ -70,4 +70,61 @@ public class Professor_Spawner : MonoBehaviour {
             Magotra.alive = true;
         }
 	}
+
+    public bool isProfessorAlive(int num) {
+        switch (num) {
+            case 1:
+                return Qouneh.alive;
+                break;
+            case 2:
+                return Moriarty.alive;
+                break;
+            case 3:
+                return Northrup.alive;
+                break;
+            case 4:
+                return Adamshick.alive;
+                break;
+            case 5:
+                return Musiak.alive;
+                break;
+            case 6:
+                return Burke.alive;
+                break;
+            case 7:
+                return Magotra.alive;
+                break;
+            default:
+                return false;
+                break;
+        }
+    }
+
+    public void killProfessor(int num) {
+        switch (num) {
+            case 1:
+                Qouneh.alive = false;
+                break;
+            case 2:
+                Moriarty.alive = false;
+                break;
+            case 3:
+                Northrup.alive = false;
+                break;
+            case 4:
+                Adamshick.alive = false;
+                break;
+            case 5:
+                Musiak.alive = false;
+                break;
+            case 6:
+                Burke.alive = false;
+                break;
+            case 7:
+                Magotra.alive = false;
+                break;
+            default:
+                break;
+        }
+    }
 }
