@@ -8,8 +8,8 @@ public class Global_Time : MonoBehaviour {
     public float currentTime; // The current time in the game
     public int currentDay = 0; // The current day in the game
     public int currentHour = 0; // The current hour in the game
-    public float oneDay = 240; // The number of seconds in one game day
-    public float oneHour = 10; // The number of seconds in one game hour
+    public float oneDay = 120; // The number of seconds in one game day
+    public float oneHour = 5; // The number of seconds in one game hour
     public int hoursInOneDay = 24; // The number of game hours in one day
     
 	// Use this for initialization

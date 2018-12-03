@@ -13,7 +13,7 @@ public class Infected_Student_Attack : MonoBehaviour {
     void hitPlayer() {
         toPlayer = player.transform.position - transform.position;
         if (toPlayer.magnitude < 5) {
-            playerReactions.stunPlayer(25);
+            playerReactions.stunPlayer(15);
         }
     }
 
@@ -32,7 +32,7 @@ public class Infected_Student_Attack : MonoBehaviour {
             // trigger attack animation
             hitPlayer();
             canAttack = false;
-            attackTimer = 100;
+            attackTimer = 75;
         }
         if (!canAttack) {
             attackTimer--;

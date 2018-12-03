@@ -102,6 +102,7 @@
     <Compile Include="Assets\Scripts\Cure\Code\Cure_Delivery_Control.cs" />
     <Compile Include="Assets\Scripts\Day Night Cycle\Code\Global_Time.cs" />
     <Compile Include="Assets\Scripts\Follow_Path.cs" />
+    <Compile Include="Assets\Scripts\Game\Code\Game_Manager.cs" />
     <Compile Include="Assets\Scripts\Infected Student Control\Code\Infected_Student_Attack.cs" />
     <Compile Include="Assets\Scripts\Infected Student Control\Code\Infected_Student_Movement.cs" />
     <Compile Include="Assets\Scripts\Inventory\Code\Inventory_Manager.cs" />
@@ -110,11 +111,13 @@
     <Compile Include="Assets\Scripts\Player\Code\Camera_Follow_Player.cs" />
     <Compile Include="Assets\Scripts\Player\Code\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Player\Code\Player_Reactions.cs" />
+    <Compile Include="Assets\Scripts\Professor Control\Code\Professor_Attack.cs" />
     <Compile Include="Assets\Scripts\Professor Control\Code\Professor_Class.cs" />
     <Compile Include="Assets\Scripts\Professor Control\Code\Professor_Movement_Control.cs" />
     <Compile Include="Assets\Scripts\Spawning\Code\Delivery_Spawner.cs" />
     <Compile Include="Assets\Scripts\Spawning\Code\Professor_Spawner.cs" />
     <Compile Include="Assets\Scripts\Spawning\Code\Student_Spawner.cs" />
+    <Compile Include="Assets\Scripts\Terrain Manager\Code\Terrain_Modifiers.cs" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
     <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />

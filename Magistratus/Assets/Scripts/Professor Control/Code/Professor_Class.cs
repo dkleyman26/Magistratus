@@ -14,7 +14,7 @@ public class Professor_Class {
         spawned = false;
         alive = false;
         id = newId;
-        spawnTime = id * 240 + 3 * 10;
+        spawnTime = (id - 1) * 120 + 3 * 5;
     }
 
 }

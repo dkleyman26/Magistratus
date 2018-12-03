@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Student_Spawner : MonoBehaviour {
 
-    public GameObject student;                // The student gameobject to be spawned.
-    public GameObject infectedStudent;        // The infected student gameobject to be spawned.
+    public GameObject studentM;                // The male student gameobject to be spawned.
+    public GameObject infectedStudentM;        // The male infected student gameobject to be spawned.
+    public GameObject studentF;                // The female student gameobject to be spawned.
+    public GameObject infectedStudentF;        // The male infected student gameobject to be spawned.
     public Professor_Spawner profesorManager; // The spawner manager for the professors.
     public Transform spawnPoint;              // The spawn point this student can spawn from.
     public bool canSpawnInfected = false;     // Bool indicating whether or not the spawn point can spawn an infected student.
@@ -41,10 +43,20 @@ public class Student_Spawner : MonoBehaviour {
     void infectedChanceSpawn (int percentage) {
         int infected = UnityEngine.Random.Range(1, 101); // Generate a random number from 1 to 100
         if (infected <= percentage) { // If the random number is less than the infected percentage, spawn an infected student
-            Instantiate(infectedStudent, spawnPoint.position, spawnPoint.rotation);
+            if (UnityEngine.Random.Range(0, 2) == 1) {
+                Instantiate(infectedStudentM, spawnPoint.position, spawnPoint.rotation);
+            }
+            else {
+                Instantiate(infectedStudentF, spawnPoint.position, spawnPoint.rotation);
+            }
         }
         else { // Spawn a non-infected student
-            Instantiate(student, spawnPoint.position, spawnPoint.rotation);
+            if (UnityEngine.Random.Range(0, 1) == 1) {
+                Instantiate(studentM, spawnPoint.position, spawnPoint.rotation);
+            }
+            else {
+                Instantiate(studentF, spawnPoint.position, spawnPoint.rotation);
+            }
         }
     }
 
@@ -65,7 +77,12 @@ public class Student_Spawner : MonoBehaviour {
                         infectedChanceSpawn(40);
                     }
                     else {
-                        Instantiate(student, spawnPoint.position, spawnPoint.rotation);
+                        if (UnityEngine.Random.Range(0, 2) == 1) {
+                            Instantiate(studentM, spawnPoint.position, spawnPoint.rotation);
+                        }
+                        else {
+                            Instantiate(studentF, spawnPoint.position, spawnPoint.rotation);
+                        }
                     }
                     break;
                 case 2: // Moriarty infection chance
@@ -73,7 +90,12 @@ public class Student_Spawner : MonoBehaviour {
                         infectedChanceSpawn(45);
                     }
                     else {
-                        Instantiate(student, spawnPoint.position, spawnPoint.rotation);
+                        if (UnityEngine.Random.Range(0, 2) == 1) {
+                            Instantiate(studentM, spawnPoint.position, spawnPoint.rotation);
+                        }
+                        else {
+                            Instantiate(studentF, spawnPoint.position, spawnPoint.rotation);
+                        }
                     }
                     break;
                 case 3: // Northrup infection chance
@@ -81,7 +103,12 @@ public class Student_Spawner : MonoBehaviour {
                         infectedChanceSpawn(55);
                     }
                     else {
-                        Instantiate(student, spawnPoint.position, spawnPoint.rotation);
+                        if (UnityEngine.Random.Range(0, 2) == 1) {
+                            Instantiate(studentM, spawnPoint.position, spawnPoint.rotation);
+                        }
+                        else {
+                            Instantiate(studentF, spawnPoint.position, spawnPoint.rotation);
+                        }
                     }
                     break;
                 case 4: // Adamshick infection chance
@@ -89,7 +116,12 @@ public class Student_Spawner : MonoBehaviour {
                         infectedChanceSpawn(60);
                     }
                     else {
-                        Instantiate(student, spawnPoint.position, spawnPoint.rotation);
+                        if (UnityEngine.Random.Range(0, 2) == 1) {
+                            Instantiate(studentM, spawnPoint.position, spawnPoint.rotation);
+                        }
+                        else {
+                            Instantiate(studentF, spawnPoint.position, spawnPoint.rotation);
+                        }
                     }
                     break;
                 case 5: // Musiak infection chance
@@ -97,7 +129,12 @@ public class Student_Spawner : MonoBehaviour {
                         infectedChanceSpawn(70);
                     }
                     else {
-                        Instantiate(student, spawnPoint.position, spawnPoint.rotation);
+                        if (UnityEngine.Random.Range(0, 2) == 1) {
+                            Instantiate(studentM, spawnPoint.position, spawnPoint.rotation);
+                        }
+                        else {
+                            Instantiate(studentF, spawnPoint.position, spawnPoint.rotation);
+                        }
                     }
                     break;
                 case 6: // Burke infection chance
@@ -105,7 +142,12 @@ public class Student_Spawner : MonoBehaviour {
                         infectedChanceSpawn(75);
                     }
                     else {
-                        Instantiate(student, spawnPoint.position, spawnPoint.rotation);
+                        if (UnityEngine.Random.Range(0, 2) == 1) {
+                            Instantiate(studentM, spawnPoint.position, spawnPoint.rotation);
+                        }
+                        else {
+                            Instantiate(studentF, spawnPoint.position, spawnPoint.rotation);
+                        }
                     }
                     break;
                 case 7: // Magotra infection chance
@@ -113,7 +155,12 @@ public class Student_Spawner : MonoBehaviour {
                         infectedChanceSpawn(90);
                     }
                     else {
-                        Instantiate(student, spawnPoint.position, spawnPoint.rotation);
+                        if (UnityEngine.Random.Range(0, 2) == 1) {
+                            Instantiate(studentM, spawnPoint.position, spawnPoint.rotation);
+                        }
+                        else {
+                            Instantiate(studentF, spawnPoint.position, spawnPoint.rotation);
+                        }
                     }
                     break;
                 default: // default infection chance
@@ -123,7 +170,12 @@ public class Student_Spawner : MonoBehaviour {
         }
         else {
             // Default to spawning a non-infected student.
-            Instantiate(student, spawnPoint.position, spawnPoint.rotation);
+            if (UnityEngine.Random.Range(0, 2) == 1) {
+                Instantiate(studentM, spawnPoint.position, spawnPoint.rotation);
+            }
+            else {
+                Instantiate(studentF, spawnPoint.position, spawnPoint.rotation);
+            }
         }
     }
 }
