@@ -102,6 +102,7 @@
     <Compile Include="Assets\Scripts\Cure\Code\Cure_Delivery_Control.cs" />
     <Compile Include="Assets\Scripts\Day Night Cycle\Code\Global_Time.cs" />
     <Compile Include="Assets\Scripts\Follow_Path.cs" />
+    <Compile Include="Assets\Scripts\Game\Code\Game_Manager.cs" />
     <Compile Include="Assets\Scripts\Infected Student Control\Code\Infected_Student_Attack.cs" />
     <Compile Include="Assets\Scripts\Infected Student Control\Code\Infected_Student_Movement.cs" />
     <Compile Include="Assets\Scripts\Inventory\Code\Inventory_Manager.cs" />

@@ -12,7 +12,7 @@ public class Cure_Delivery_Control : MonoBehaviour {
     void Start () {
         player = GameObject.Find("Player");
         inventory = player.GetComponent<Inventory_Manager>();
-        cureInBox = Random.Range(1, 6);
+        cureInBox = Random.Range(3, 7);
     }
 	
 	// Update is called once per frame

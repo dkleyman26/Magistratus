@@ -8,6 +8,7 @@ public class Player_Movement : MonoBehaviour {
     public float speed = 10; // The speed at which the player travels
     public float rotationSpeed = 8; // The speed at which the player rotates
     public Player_Reactions playerReactions; // Reference to the player reactions script
+    public GameObject coffee;
 
     bool canThrow = true; // Boolean indicating that the player can throw a cure
     int throwTimer; // Delay count for how long until the player can throw again
@@ -23,7 +24,8 @@ public class Player_Movement : MonoBehaviour {
         terra = GameObject.Find("Terra_Mod").GetComponent<Terrain_Modifiers>(); // Get the terrain modifiers
         rb = GetComponent<Rigidbody>(); // Gets the players Rigidbody
         rb.freezeRotation = true;
-	}
+        coffee.SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -42,8 +44,10 @@ public class Player_Movement : MonoBehaviour {
             throwTimer--;
             if (throwTimer == 0) {
                 canThrow = true;
+                coffee.SetActive(false); // Hide the coffee cup
             }
         }
+        coffee.transform.position = transform.position + transform.forward + (transform.up * (float)1.5) + (transform.right * (float)0.4); // Set the coffee cup position relative to the player
 	}
 
     // Move the player based on the key input
@@ -65,6 +69,7 @@ public class Player_Movement : MonoBehaviour {
             canThrow = false; // The player can't immediately throw again
             throwTimer = 10; // Delay for how long until the player can throw again
             terra.setCurePatch(transform.position + transform.forward * 2);// Set the infected ground
+            coffee.SetActive(true); // Display the coffee cup
         }
     }
 }
